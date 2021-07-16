@@ -364,6 +364,108 @@ public final class Main extends JavaPlugin {
         glowBerry.setIngredient('B', Material.SWEET_BERRIES);
         glowBerry.setIngredient('D', Material.GLOWSTONE_DUST);
         Bukkit.addRecipe(glowBerry);
+
+        //Glowing Ink Sacs
+        final ShapedRecipe glowInkSac = new ShapedRecipe(new NamespacedKey(this, "custom_glow_ink_sac"), new ItemStack(Material.GLOW_INK_SAC, 1));
+        glowInkSac.shape(" D ", "DSD", " D ");
+        glowInkSac.setIngredient('S', Material.INK_SAC);
+        glowInkSac.setIngredient('D', Material.GLOWSTONE_DUST);
+        Bukkit.addRecipe(glowInkSac);
+
+        //Ink Sac
+        final ShapelessRecipe inkSac = new ShapelessRecipe(new NamespacedKey(this, "custom_ink_sac"), new ItemStack(Material.INK_SAC, 2));
+        inkSac.addIngredient(1, Material.BLACK_DYE);
+        inkSac.addIngredient(1, Material.LEATHER);
+        Bukkit.addRecipe(inkSac);
+
+        //Pointed Dripstone
+        final ShapedRecipe pointedDripstone = new ShapedRecipe(new NamespacedKey(this, "custom_pointed_dripstone"), new ItemStack(Material.POINTED_DRIPSTONE, 1));
+        pointedDripstone.shape("D D", " D ", " D ");
+        pointedDripstone.setIngredient('D', Material.DRIPSTONE_BLOCK);
+        Bukkit.addRecipe(pointedDripstone);
+
+        //Dripstone
+        final ShapelessRecipe dripStone = new ShapelessRecipe(new NamespacedKey(this, "custom_dripstone"), new ItemStack(Material.DRIPSTONE_BLOCK, 4));
+        dripStone.addIngredient(1, Material.COBBLESTONE);
+        dripStone.addIngredient(1, Material.ANDESITE);
+        dripStone.addIngredient(1, Material.GRANITE);
+        dripStone.addIngredient(1, Material.DIORITE);
+        Bukkit.addRecipe(dripStone);
+
+        //Small Dripleaf
+        final ShapedRecipe smlDripleaf = new ShapedRecipe(new NamespacedKey(this, "custom_small_dripleaf"), new ItemStack(Material.SMALL_DRIPLEAF, 1));
+        smlDripleaf.shape(" L ", "KGK", " W ");
+        smlDripleaf.setIngredient('L', Material.LILY_PAD);
+        smlDripleaf.setIngredient('K', Material.KELP);
+        smlDripleaf.setIngredient('G', Material.SEAGRASS);
+        smlDripleaf.setIngredient('W', Material.WARPED_ROOTS);
+        Bukkit.addRecipe(smlDripleaf);
+
+        //Big Dripleaf
+        final ShapedRecipe bigDripleaf = new ShapedRecipe(new NamespacedKey(this, "custom_big_dripleaf"), new ItemStack(Material.BIG_DRIPLEAF, 1));
+        bigDripleaf.shape(" L ", "KVK", " W ");
+        bigDripleaf.setIngredient('L', Material.LILY_PAD);
+        bigDripleaf.setIngredient('K', Material.KELP);
+        bigDripleaf.setIngredient('V', Material.VINE);
+        bigDripleaf.setIngredient('W', Material.WARPED_ROOTS);
+        Bukkit.addRecipe(bigDripleaf);
+
+        //Azalea
+        final ShapelessRecipe azalea1 = new ShapelessRecipe(new NamespacedKey(this, "custom_azalea_1"), new ItemStack(Material.AZALEA, 1));
+        azalea1.addIngredient(1, Material.GRASS);
+        azalea1.addIngredient(1, Material.OAK_LEAVES);
+        Bukkit.addRecipe(azalea1);
+
+        final ShapelessRecipe azalea2 = new ShapelessRecipe(new NamespacedKey(this, "custom_azalea_2"), new ItemStack(Material.AZALEA, 1));
+        azalea2.addIngredient(1, Material.GRASS);
+        azalea2.addIngredient(1, Material.BIRCH_LEAVES);
+        Bukkit.addRecipe(azalea2);
+
+        //Azalea Leaves
+        final ShapelessRecipe azaleaLeaves = new ShapelessRecipe(new NamespacedKey(this, "custom_azalea_leaves"), new ItemStack(Material.AZALEA_LEAVES, 1));
+        azaleaLeaves.addIngredient(1, Material.VINE);
+        azaleaLeaves.addIngredient(1, Material.OAK_LEAVES);
+        Bukkit.addRecipe(azaleaLeaves);
+
+        //Flowering Azalea
+        final ShapelessRecipe floweringAzalea = new ShapelessRecipe(new NamespacedKey(this, "custom_flowering_azalea"), new ItemStack(Material.FLOWERING_AZALEA, 1));
+        floweringAzalea.addIngredient(1, Material.AZALEA);
+        floweringAzalea.addIngredient(1, Material.DANDELION);
+        Bukkit.addRecipe(floweringAzalea);
+
+        //Flowering Azalea Leaves
+        final ShapelessRecipe floweringAzaleaLeaves = new ShapelessRecipe(new NamespacedKey(this, "custom_flowering_azalea_Leaves"), new ItemStack(Material.FLOWERING_AZALEA_LEAVES, 1));
+        floweringAzaleaLeaves.addIngredient(1, Material.AZALEA_LEAVES);
+        floweringAzaleaLeaves.addIngredient(1, Material.DANDELION);
+        Bukkit.addRecipe(floweringAzaleaLeaves);
+
+        //MOSS BLOCK
+        final ShapedRecipe mossBlock = new ShapedRecipe(new NamespacedKey(this, "custom_moss_block"), new ItemStack(Material.MOSS_BLOCK, 1));
+        mossBlock.shape(" G ", "SCS", " G ");
+        mossBlock.setIngredient('G', Material.GRASS);
+        mossBlock.setIngredient('S', Material.WHEAT_SEEDS);
+        mossBlock.setIngredient('C', Material.MOSSY_COBBLESTONE);
+        Bukkit.addRecipe(mossBlock);
+
+        //Glow Lichen
+        final ShapelessRecipe glowLichen = new ShapelessRecipe(new NamespacedKey(this, "custom_glow_lichen"), new ItemStack(Material.GLOW_LICHEN, 1));
+        glowLichen.addIngredient(1, Material.VINE);
+        glowLichen.addIngredient(1, Material.GLOWSTONE_DUST);
+        Bukkit.addRecipe(glowLichen);
+
+        //Calcite
+        final ShapedRecipe calcite = new ShapedRecipe(new NamespacedKey(this, "custom_calcite"), new ItemStack(Material.CALCITE, 2));
+        calcite.shape("   ", " DW", " WD");
+        calcite.setIngredient('D', Material.DIORITE);
+        calcite.setIngredient('W', Material.WHITE_DYE);
+        Bukkit.addRecipe(calcite);
+
+        //Tuff
+        final ShapedRecipe tuff = new ShapedRecipe(new NamespacedKey(this, "custom_tuff"), new ItemStack(Material.TUFF, 2));
+        tuff.shape("   ", " AG", " GA");
+        tuff.setIngredient('A', Material.ANDESITE);
+        tuff.setIngredient('G', Material.GRAY_DYE);
+        Bukkit.addRecipe(tuff);
     }
 
 
