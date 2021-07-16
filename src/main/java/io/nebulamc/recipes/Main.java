@@ -10,28 +10,27 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Main extends JavaPlugin {
 
     public static Main plugin;
-    private static final String prefix = "§5[§dTownyPorts§5]§r ";
 
     @Override
     public void onEnable() {
         plugin = this;
-        System.out.println(prefix + "Initializing Plugin.");
+        System.out.println("Initializing Plugin.");
         printSexyASCIIArt();
-        System.out.println(prefix + "Version: " + this.getDescription().getVersion());
-        System.out.println(prefix + "Website: " + this.getDescription().getWebsite());
-        System.out.println(prefix + "Initializing Recipes...");
+        System.out.println("Version: " + this.getDescription().getVersion());
+        System.out.println("Website: " + this.getDescription().getWebsite());
+        System.out.println("Initializing Recipes...");
         recipes();
         onePointSeventeenRecipes();
-        System.out.println(prefix + "Initializing Nerfed Recipes...");
+        System.out.println("Initializing Nerfed Recipes...");
         nerfRecipes();
-        System.out.println(prefix + "Plugin startup completed.");
+        System.out.println("Plugin startup completed.");
     }
 
     @Override
     public void onDisable() {
-        System.err.println(prefix + "Initializing Shutdown.");
+        System.err.println("Initializing Shutdown.");
         printSexyASCIIArt();
-        System.err.println(prefix + "Shutdown Complete.");
+        System.err.println("Shutdown Complete.");
     }
 
     public void recipes(){
