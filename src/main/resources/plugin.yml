@@ -1,0 +1,7 @@
+name: Recipes
+version: ${project.version}
+main: io.nebulamc.recipes.Main
+api-version: 1.17
+authors: [ 0xBit, DeltaDeveloper ]
+description: A plugin to load recipes seperately because loading recipes into another plugin that needs reloading will break stuff. Rad
+website: https://nebulamc.io/plugins/recipes
