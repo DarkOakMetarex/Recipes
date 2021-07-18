@@ -474,12 +474,12 @@ public final class Main extends JavaPlugin {
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ore_nerf"), new ItemStack(Material.GOLD_ORE, 1), Material.GOLD_ORE, 0, 60));
 
         // Raw Gold Ore -> Gold Nugget
-        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_NUGGET, 1), Material.RAW_GOLD));
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_nugget"), new ItemStack(Material.GOLD_NUGGET, 1), Material.RAW_GOLD, 1, 30));
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_nugget"), new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD, 5, 30));
 
         // Raw Gold Block -> Gold Ingot
-        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_INGOT, 1), Material.RAW_GOLD_BLOCK));
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ingot"), new ItemStack(Material.GOLD_INGOT, 1), Material.RAW_GOLD_BLOCK, 1, 30));
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ingot"), new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK, 15, 30));
     }
 
     private void printSexyASCIIArt(){
