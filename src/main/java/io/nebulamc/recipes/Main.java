@@ -348,7 +348,7 @@ public final class Main extends JavaPlugin {
         =============================
          */
         // DeepSlate
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate"), new ItemStack(Material.DEEPSLATE, 1), Material.BLACKSTONE, 0, 40));
+        //this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate"), new ItemStack(Material.DEEPSLATE, 1), Material.BLACKSTONE, 0, 40));
 
         //Amethyst Block
         final ShapedRecipe amethyst = new ShapedRecipe(new NamespacedKey(this, "custom_amethyst"), new ItemStack(Material.AMETHYST_BLOCK, 1));
@@ -365,31 +365,31 @@ public final class Main extends JavaPlugin {
         Bukkit.addRecipe(glowBerry);
 
         //Glowing Ink Sacs
-        final ShapedRecipe glowInkSac = new ShapedRecipe(new NamespacedKey(this, "custom_glow_ink_sac"), new ItemStack(Material.GLOW_INK_SAC, 1));
-        glowInkSac.shape(" D ", "DSD", " D ");
-        glowInkSac.setIngredient('S', Material.INK_SAC);
-        glowInkSac.setIngredient('D', Material.GLOWSTONE_DUST);
-        Bukkit.addRecipe(glowInkSac);
+        //final ShapedRecipe glowInkSac = new ShapedRecipe(new NamespacedKey(this, "custom_glow_ink_sac"), new ItemStack(Material.GLOW_INK_SAC, 1));
+        //glowInkSac.shape(" D ", "DSD", " D ");
+        //glowInkSac.setIngredient('S', Material.INK_SAC);
+        //glowInkSac.setIngredient('D', Material.GLOWSTONE_DUST);
+        //Bukkit.addRecipe(glowInkSac);
 
         //Ink Sac
-        final ShapelessRecipe inkSac = new ShapelessRecipe(new NamespacedKey(this, "custom_ink_sac"), new ItemStack(Material.INK_SAC, 2));
-        inkSac.addIngredient(1, Material.BLACK_DYE);
-        inkSac.addIngredient(1, Material.LEATHER);
-        Bukkit.addRecipe(inkSac);
+        // final ShapelessRecipe inkSac = new ShapelessRecipe(new NamespacedKey(this, "custom_ink_sac"), new ItemStack(Material.INK_SAC, 2));
+        //inkSac.addIngredient(1, Material.BLACK_DYE);
+        // inkSac.addIngredient(1, Material.LEATHER);
+        //Bukkit.addRecipe(inkSac);
 
         //Pointed Dripstone
-        final ShapedRecipe pointedDripstone = new ShapedRecipe(new NamespacedKey(this, "custom_pointed_dripstone"), new ItemStack(Material.POINTED_DRIPSTONE, 1));
-        pointedDripstone.shape("D D", " D ", " D ");
-        pointedDripstone.setIngredient('D', Material.DRIPSTONE_BLOCK);
-        Bukkit.addRecipe(pointedDripstone);
+        //final ShapedRecipe pointedDripstone = new ShapedRecipe(new NamespacedKey(this, "custom_pointed_dripstone"), new ItemStack(Material.POINTED_DRIPSTONE, 1));
+        //pointedDripstone.shape("D D", " D ", " D ");
+        //pointedDripstone.setIngredient('D', Material.DRIPSTONE_BLOCK);
+        //Bukkit.addRecipe(pointedDripstone);
 
         //Dripstone
-        final ShapelessRecipe dripStone = new ShapelessRecipe(new NamespacedKey(this, "custom_dripstone"), new ItemStack(Material.DRIPSTONE_BLOCK, 4));
-        dripStone.addIngredient(1, Material.COBBLESTONE);
-        dripStone.addIngredient(1, Material.ANDESITE);
-        dripStone.addIngredient(1, Material.GRANITE);
-        dripStone.addIngredient(1, Material.DIORITE);
-        Bukkit.addRecipe(dripStone);
+        //final ShapelessRecipe dripStone = new ShapelessRecipe(new NamespacedKey(this, "custom_dripstone"), new ItemStack(Material.DRIPSTONE_BLOCK, 4));
+        //dripStone.addIngredient(1, Material.COBBLESTONE);
+        //dripStone.addIngredient(1, Material.ANDESITE);
+        //dripStone.addIngredient(1, Material.GRANITE);
+        //dripStone.addIngredient(1, Material.DIORITE);
+        //Bukkit.addRecipe(dripStone);
 
         //Small Dripleaf
         final ShapedRecipe smlDripleaf = new ShapedRecipe(new NamespacedKey(this, "custom_small_dripleaf"), new ItemStack(Material.SMALL_DRIPLEAF, 1));
@@ -453,18 +453,18 @@ public final class Main extends JavaPlugin {
         Bukkit.addRecipe(glowLichen);
 
         //Calcite
-        final ShapedRecipe calcite = new ShapedRecipe(new NamespacedKey(this, "custom_calcite"), new ItemStack(Material.CALCITE, 2));
-        calcite.shape("   ", " DW", " WD");
-        calcite.setIngredient('D', Material.DIORITE);
-        calcite.setIngredient('W', Material.WHITE_DYE);
-        Bukkit.addRecipe(calcite);
+        //final ShapedRecipe calcite = new ShapedRecipe(new NamespacedKey(this, "custom_calcite"), new ItemStack(Material.CALCITE, 2));
+        //calcite.shape("   ", " DW", " WD");
+        //calcite.setIngredient('D', Material.DIORITE);
+        //calcite.setIngredient('W', Material.WHITE_DYE);
+        //Bukkit.addRecipe(calcite);
 
         //Tuff
-        final ShapedRecipe tuff = new ShapedRecipe(new NamespacedKey(this, "custom_tuff"), new ItemStack(Material.TUFF, 2));
-        tuff.shape("   ", " AG", " GA");
-        tuff.setIngredient('A', Material.ANDESITE);
-        tuff.setIngredient('G', Material.GRAY_DYE);
-        Bukkit.addRecipe(tuff);
+        //final ShapedRecipe tuff = new ShapedRecipe(new NamespacedKey(this, "custom_tuff"), new ItemStack(Material.TUFF, 2));
+        //tuff.shape("   ", " AG", " GA");
+        //tuff.setIngredient('A', Material.ANDESITE);
+        //tuff.setIngredient('G', Material.GRAY_DYE);
+        //Bukkit.addRecipe(tuff);
     }
 
 
