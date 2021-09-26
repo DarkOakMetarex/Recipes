@@ -214,6 +214,12 @@ public final class Main extends JavaPlugin {
         warpedNylium.addIngredient(1, Material.NETHER_WART);
         warpedNylium.addIngredient(1, Material.SOUL_SAND);
         Bukkit.addRecipe(warpedNylium);
+        
+        //Dead Bush
+        final ShapedRecipe deadBush = new ShapedRecipe(new NamespacedKey(this, "custom_dead_bush"), new ItemStack(Material.DEAD_BUSH, 4));
+        deadBush.shape("   ", " S ", " S ");
+        deadBush.setIngredient('S', Material.STICK);
+        Bukkit.addRecipe(deadBush);
 
         final ShapedRecipe gunPowder = new ShapedRecipe(new NamespacedKey(this, "custom_gunpowder"), new ItemStack(Material.GUNPOWDER, 4));
         gunPowder.shape("GGG", "GCG", "GGG");
@@ -226,6 +232,7 @@ public final class Main extends JavaPlugin {
         endRod.setIngredient('Q', Material.QUARTZ);
         endRod.setIngredient('T', Material.TORCH);
         Bukkit.addRecipe(endRod);
+        
 
 
         /*=================
