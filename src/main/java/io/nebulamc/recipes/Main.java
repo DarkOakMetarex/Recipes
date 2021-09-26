@@ -363,6 +363,24 @@ public final class Main extends JavaPlugin {
         amethyst.setIngredient('Q', Material.QUARTZ_BLOCK);
         amethyst.setIngredient('D', Material.PURPLE_DYE);
         Bukkit.addRecipe(amethyst);
+        
+        //Amethyst Shard
+        final ShapelessRecipe amethystShard = new ShapelessRecipe(new NamespacedKey(this, "custom_amethyst_shard"), new ItemStack(Material.AMETHYST_SHARD, 4));
+        amethystShard.addIngredient(1, Material.AMETHYST_BLOCK);
+        Bukkit.addRecipe(amethystShard);
+        
+        //Phantom Membrane
+        final ShapelessRecipe phantomMembrane = new ShapelessRecipe(new NamespacedKey(this, "custom_phantom_membrane"), new ItemStack(Material.PHANTOM_MEMBRANE, 1));
+        phantomMembrane.addIngredient(1, Material.HONEYCOMB);
+        phantomMembrane.addIngredient(1, Material.NETHER_QUARTZ);
+        Bukkit.addRecipe(phantomMembrane);
+        
+        //Popped Chorus Fruit
+        final ShapelessRecipe poppedChorusFruit = new ShapelessRecipe(new NamespacedKey(this, "custom_popped_chorus_fruit"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
+        poppedChorusFruit.addIngredient(1, Material.PHANTOM_MEMBRANE);
+        poppedChorusFruit.addIngredient(1, Material.EYE_OF_ENDER);
+        poppedChorusFruit.addIngredient(1, Material.AMETHYST_SHARD);
+        Bukkit.addRecipe(poppedChorusFruit);
 
         //Glow Berries
         final ShapedRecipe glowBerry = new ShapedRecipe(new NamespacedKey(this, "custom_glow_berry"), new ItemStack(Material.GLOW_BERRIES, 1));
