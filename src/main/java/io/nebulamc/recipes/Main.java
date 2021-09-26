@@ -356,7 +356,28 @@ public final class Main extends JavaPlugin {
          */
         // DeepSlate
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate"), new ItemStack(Material.DEEPSLATE, 1), Material.BLACKSTONE, 0, 40));
+        
+        // Deepslate Diamond Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_diamond_ore"), new ItemStack(Material.DEEPSLATE_DIAMOND_ORE, 1), Material.DIAMOND_ORE, 0, 60));
 
+        // Deepslate Gold Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_gold_ore"), new ItemStack(Material.DEEPSLATE_GOLD_ORE, 1), Material.GOLD_ORE, 0, 60));
+
+        // Deepslate Iron Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_iron_ore"), new ItemStack(Material.DEEPSLATE_IRON_ORE, 1), Material.IRON_ORE, 0, 60));
+        
+        // Deepslate Copper Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_copper_ore"), new ItemStack(Material.DEEPSLATE_COPPER_ORE, 1), Material.COPPER_ORE, 0, 60));
+        
+        // Deepslate Emerald Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_emerald_ore"), new ItemStack(Material.DEEPSLATE_EMERALD_ORE, 1), Material.EMERALD_ORE, 0, 60));
+        
+        // Deepslate Redstone Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_redstone_ore"), new ItemStack(Material.DEEPSLATE_REDSTONE_ORE, 1), Material.REDSTONE_ORE, 0, 60));
+        
+        // Deepslate Lapis Lazuli Ore 
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_lapis_lazuli_ore"), new ItemStack(Material.DEEPSLATE_LAPIS_LAZULI_ORE, 1), Material.LAPIS_LAZULI_ORE, 0, 60));
+        
         //Amethyst Block
         final ShapedRecipe amethyst = new ShapedRecipe(new NamespacedKey(this, "custom_amethyst"), new ItemStack(Material.AMETHYST_BLOCK, 1));
         amethyst.shape(" D ", "DQD", " D ");
@@ -478,7 +499,9 @@ public final class Main extends JavaPlugin {
     public void nerfRecipes(){
         // Gold Ore -> Becomes Gold Ore = Nullify
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_ORE, 1), Material.GOLD_ORE));
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ore_nerf"), new ItemStack(Material.GOLD_ORE, 1), Material.GOLD_ORE, 0, 60));
+        
+        // Deepslate Gold Ore -> Deepslate Gold Ore
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_gold_ore_nerf"), new ItemStack(Material.DEEPSLATE_GOLD_ORE, 1), Material.DEEPSLATE_GOLD_ORE, 0, 60));
 
         // Raw Gold Ore -> Gold Nugget
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD));
