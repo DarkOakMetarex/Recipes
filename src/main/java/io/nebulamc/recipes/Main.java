@@ -180,7 +180,6 @@ public final class Main extends JavaPlugin {
         blackstone.setIngredient('D', Material.BLACK_DYE);
         Bukkit.addRecipe(blackstone);
 
-
         //Custom Chiseled Polished Blackstone
         final ShapedRecipe chiseledBlackstone = new ShapedRecipe(new NamespacedKey(this, "custom_chiseled_blackstone"), new ItemStack(Material.CHISELED_POLISHED_BLACKSTONE, 4));
         chiseledBlackstone.shape(" BB", " BB", "   ");
@@ -221,18 +220,30 @@ public final class Main extends JavaPlugin {
         deadBush.setIngredient('S', Material.STICK);
         Bukkit.addRecipe(deadBush);
 
+        //Gunpoweder
         final ShapedRecipe gunPowder = new ShapedRecipe(new NamespacedKey(this, "custom_gunpowder"), new ItemStack(Material.GUNPOWDER, 4));
         gunPowder.shape("GGG", "GCG", "GGG");
         gunPowder.setIngredient('G', Material.GLOWSTONE_DUST);
         gunPowder.setIngredient('C', Material.COAL);
         Bukkit.addRecipe(gunPowder);
 
-        final ShapedRecipe endRod = new ShapedRecipe(new NamespacedKey(this, "custom_end_rod"), new ItemStack(Material.END_ROD, 1));
-        endRod.shape(" Q ", " T ", " Q ");
-        endRod.setIngredient('Q', Material.QUARTZ);
-        endRod.setIngredient('T', Material.TORCH);
-        Bukkit.addRecipe(endRod);
-        
+        //Amethyst Shard
+        final ShapelessRecipe amethystShard = new ShapelessRecipe(new NamespacedKey(this, "custom_amethyst_shard"), new ItemStack(Material.AMETHYST_SHARD, 4));
+        amethystShard.addIngredient(1, Material.AMETHYST_BLOCK);
+        Bukkit.addRecipe(amethystShard);
+
+        //Phantom Membrane
+        final ShapelessRecipe phantomMembrane = new ShapelessRecipe(new NamespacedKey(this, "custom_phantom_membrane"), new ItemStack(Material.PHANTOM_MEMBRANE, 1));
+        phantomMembrane.addIngredient(1, Material.HONEYCOMB);
+        phantomMembrane.addIngredient(1, Material.QUARTZ);
+        Bukkit.addRecipe(phantomMembrane);
+
+        //Chorus Flower
+        final ShapelessRecipe chorusFlower = new ShapelessRecipe(new NamespacedKey(this, "custom_chorus_flower"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
+        chorusFlower.addIngredient(1, Material.PHANTOM_MEMBRANE);
+        chorusFlower.addIngredient(1, Material.ENDER_EYE);
+        chorusFlower.addIngredient(1, Material.AMETHYST_SHARD);
+        Bukkit.addRecipe(chorusFlower);
 
 
         /*=================
@@ -482,11 +493,11 @@ public final class Main extends JavaPlugin {
 
         // Raw Gold Ore -> Gold Nugget
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD));
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_nugget"), new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD, 5, 30));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_nugget"), new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD, 3, 30));
 
         // Raw Gold Block -> Gold Ingot
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK));
-        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ingot"), new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK, 15, 30));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ingot"), new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK, 5, 30));
     }
 
     private void printSexyASCIIArt(){
@@ -501,6 +512,6 @@ public final class Main extends JavaPlugin {
         System.out.println("§a    ██████  █████   ██      ██ ██████  █████   ███████ ");
         System.out.println("§a    ██   ██ ██      ██      ██ ██      ██           ██ ");
         System.out.println("§a    ██   ██ ███████  ██████ ██ ██      ███████ ███████ ");
-        System.out.println("§b                            by 0xBit for Nebula Network");
+        System.out.println("§b                            by 0xBit for EarthPol");
     }
 }
