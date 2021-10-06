@@ -244,6 +244,20 @@ public final class Main extends JavaPlugin {
         chorusFlower.addIngredient(1, Material.ENDER_EYE);
         chorusFlower.addIngredient(1, Material.AMETHYST_SHARD);
         Bukkit.addRecipe(chorusFlower);
+        
+        //Ghast Tear
+        final ShapelessRecipe ghastTear = new ShapelessRecipe(new NamespacedKey(this, "custom_ghast_tear"), new ItemStack(Material.GHAST_TEAR, 1));
+        ghastTear.addIngredient(1, Material.PRISMARINE_CRYSTALS);
+        ghastTear.addIngredient(1, Material.IRON_NUGGET);
+        Bukkit.addRecipe(ghastTear);
+        
+        //Nullify End Crystal
+        final ShapedRecipe endCrystal = new ShapedRecipe(new NamespacedKey(this, "custom_end_crystal"), new ItemStack(Material.END_CRYSTAL, 0));
+        endCrystal.shape("GTG", "GEG", "GGG");
+        endCrystal.setIngredient('G', Material.GLASS);
+        endCrystal.setIngredient('E', Material.EYE_OF_ENDER);
+        endCrystal.setIngredient('T', Material.GHAST_TEAR);
+        Bukkit.addRecipe(endCrystal);
 
 
         /*=================
