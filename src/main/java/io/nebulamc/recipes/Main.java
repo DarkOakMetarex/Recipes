@@ -244,6 +244,13 @@ public final class Main extends JavaPlugin {
         chorusFlower.addIngredient(1, Material.ENDER_EYE);
         chorusFlower.addIngredient(1, Material.AMETHYST_SHARD);
         Bukkit.addRecipe(chorusFlower);
+        
+        //Nullify Respawn Anchor
+        final ShapedRecipe respawnAnchor = new ShapedRecipe(new NamespacedKey(this, "custom_respawn_anchor"), new ItemStack(Material.RESPAWN_ANCHOR, 0));
+        netherWart.shape("CCC", "GGG", "CCC");
+        respawnAnchor.setIngredient('C', Material.CRYING_OBSIDIAN);
+        respawnAnchor.setIngredient('G', Material.GLOWSTONE);
+        Bukkit.addRecipe(respawnAnchor);
 
 
         /*=================
@@ -367,6 +374,9 @@ public final class Main extends JavaPlugin {
          */
         // DeepSlate
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate"), new ItemStack(Material.DEEPSLATE, 1), Material.BLACKSTONE, 0, 40));
+        
+        // Crying Obsidian
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_crying_obsidian"), new ItemStack(Material.CRYING_OBSIDIAN, 1), Material.OBSIDIAN, 0, 40));
 
         //Amethyst Block
         final ShapedRecipe amethyst = new ShapedRecipe(new NamespacedKey(this, "custom_amethyst"), new ItemStack(Material.AMETHYST_BLOCK, 1));
@@ -490,7 +500,16 @@ public final class Main extends JavaPlugin {
         // Gold Ore -> Becomes Gold Ore = Nullify
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_ORE, 1), Material.GOLD_ORE));
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ore_nerf"), new ItemStack(Material.GOLD_ORE, 1), Material.GOLD_ORE, 0, 60));
+        
+        // Deepslate Gold Ore -> Becomes Gilded Blackstone
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GILDED_BLACKSTONE, 1), Material.DEEPSLATE_GOLD_ORE));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_deepslate_gold_ore_nerf"), new ItemStack(Material.GILDED_BLACKSTONE, 1), Material.DEEPSLATE_GOLD_ORE, 0, 60));
 
+        // Gilded Blackstone -> Becomes Gilded Blackstone = Nullify
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GILDED_BLACKSTONE, 1), Material.GILDED_BLACKSTONE));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gilded_blackstone_nerf"), new ItemStack(Material.GILDED_BLACKSTONE, 1), Material.GILDED_BLACKSTONE, 0, 60));
+
+        
         // Raw Gold Ore -> Gold Nugget
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD));
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_nugget"), new ItemStack(Material.GOLD_NUGGET, 3), Material.RAW_GOLD, 3, 30));
