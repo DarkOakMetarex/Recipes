@@ -239,7 +239,7 @@ public final class Main extends JavaPlugin {
         Bukkit.addRecipe(phantomMembrane);
 
         //Chorus Flower
-        final ShapelessRecipe chorusFlower = new ShapelessRecipe(new NamespacedKey(this, "custom_chorus_flower"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
+        final ShapelessRecipe chorusFlower = new ShapelessRecipe(new NamespacedKey(this, "custom_chorus_flower"), new ItemStack(Material.CHORUS_FRUIT, 4));
         chorusFlower.addIngredient(1, Material.PHANTOM_MEMBRANE);
         chorusFlower.addIngredient(1, Material.ENDER_EYE);
         chorusFlower.addIngredient(1, Material.AMETHYST_SHARD);
