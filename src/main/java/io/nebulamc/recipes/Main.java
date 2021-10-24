@@ -219,13 +219,6 @@ public final class Main extends JavaPlugin {
         deadBush.shape("   ", " S ", " S ");
         deadBush.setIngredient('S', Material.STICK);
         Bukkit.addRecipe(deadBush);
-        
-        //Glow Lichen
-        final ShapedRecipe glowLichen = new ShapedRecipe(new NamespacedKey(this, "custom_glow_lichen"), new ItemStack(Material.GLOW_LICHEN, 4));
-        glowLichen.shape("   ", " V ", " G ");
-        glowLichen.setIngredient('V', Material.VINES);
-        glowLichen.setIngredient('G', Material.GLOWSTONE_DUST);
-        Bukkit.addRecipe(glowLichen);
 
         //Gunpoweder
         final ShapedRecipe gunPowder = new ShapedRecipe(new NamespacedKey(this, "custom_gunpowder"), new ItemStack(Material.GUNPOWDER, 4));
@@ -246,7 +239,7 @@ public final class Main extends JavaPlugin {
         Bukkit.addRecipe(phantomMembrane);
 
         //Chorus Flower
-        final ShapelessRecipe chorusFlower = new ShapelessRecipe(new NamespacedKey(this, "custom_chorus_flower"), new ItemStack(Material.POPPED_CHORUS_FRUIT, 4));
+        final ShapelessRecipe chorusFlower = new ShapelessRecipe(new NamespacedKey(this, "custom_chorus_flower"), new ItemStack(Material.CHORUS_FLOWER, 3));
         chorusFlower.addIngredient(1, Material.PHANTOM_MEMBRANE);
         chorusFlower.addIngredient(1, Material.ENDER_EYE);
         chorusFlower.addIngredient(1, Material.AMETHYST_SHARD);
