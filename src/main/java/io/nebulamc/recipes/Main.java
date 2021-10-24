@@ -219,6 +219,13 @@ public final class Main extends JavaPlugin {
         deadBush.shape("   ", " S ", " S ");
         deadBush.setIngredient('S', Material.STICK);
         Bukkit.addRecipe(deadBush);
+        
+        //Glow Lichen
+        final ShapedRecipe glowLichen = new ShapedRecipe(new NamespacedKey(this, "custom_glow_lichen"), new ItemStack(Material.GLOW_LICHEN, 4));
+        glowLichen.shape("   ", " V ", " G ");
+        glowLichen.setIngredient('V', Material.VINES);
+        glowLichen.setIngredient('G', Material.GLOWSTONE_DUST);
+        Bukkit.addRecipe(glowLichen);
 
         //Gunpoweder
         final ShapedRecipe gunPowder = new ShapedRecipe(new NamespacedKey(this, "custom_gunpowder"), new ItemStack(Material.GUNPOWDER, 4));
