@@ -498,6 +498,14 @@ public final class Main extends JavaPlugin {
         // Raw Gold Block -> Gold Ingot
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK));
         this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_gold_ingot"), new ItemStack(Material.GOLD_INGOT, 3), Material.RAW_GOLD_BLOCK, 5, 30));
+        
+        // Raw Iron Block -> Iron Ingot
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.IRON_INGOT, 9), Material.RAW_IRON_BLOCK));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_iron_ingot"), new ItemStack(Material.IRON_INGOT, 9), Material.RAW_IRON_BLOCK, 5, 30));
+        
+        // Raw Copper Block -> Copper Ingot
+        this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.COPPER_INGOT, 9), Material.RAW_COPPER_BLOCK));
+        this.getServer().addRecipe(new BlastingRecipe(new NamespacedKey(this, "custom_copper_ingot"), new ItemStack(Material.COPPER_INGOT, 9), Material.RAW_COPPER_BLOCK, 5, 30));
     }
 
     private void printSexyASCIIArt(){
