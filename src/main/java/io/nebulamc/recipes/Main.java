@@ -534,40 +534,6 @@ public final class Main extends JavaPlugin {
         tuff.setIngredient('G', Material.GRAY_DYE);
         Bukkit.addRecipe(tuff);
     }
-        
-        /*=================
-        * EASTER EGGS
-        ==================*/
-    
-        //Skeleton Skull
-        final ShapelessRecipe skeletonSKull = new ShapelessRecipe(new NamespacedKey(this, "custom_skeleton_skull"), new ItemStack(Material.SKELETON_SKULL, 1));
-        skeletonSKull.addIngredient(1, Material.WITHER_SKELETON_SKULL);
-        skeletonSKull.addIngredient(1, Material.BONE);
-        Bukkit.addRecipe(skeletonSKull);
-        
-        //PLayer Head
-        final ShapelessRecipe playerHead = new ShapelessRecipe(new NamespacedKey(this, "custom_player_head"), new ItemStack(Material.PLAYER_HEAD, 1));
-        playerHead.addIngredient(1, Material.WITHER_SKELETON_SKULL);
-        playerHead.addIngredient(1, Material.GRASS_BLOCK);
-        Bukkit.addRecipe(playerHead);
-        
-        //Zombie Head
-        final ShapelessRecipe zombieHead = new ShapelessRecipe(new NamespacedKey(this, "custom_zombie_head"), new ItemStack(Material.ZOMBIE_HEAD, 1));
-        zombieHead.addIngredient(1, Material.WITHER_SKELETON_SKULL);
-        zombieHead.addIngredient(1, Material.ROTTEN_FLESH);
-        Bukkit.addRecipe(zombieHead);
-        
-        //Creeper Head
-        final ShapelessRecipe creeperHead = new ShapelessRecipe(new NamespacedKey(this, "custom_creeper_head"), new ItemStack(Material.CREEPER_HEAD, 1));
-        creeperHead.addIngredient(1, Material.WITHER_SKELETON_SKULL);
-        creeperHead.addIngredient(1, Material.GUNPOWDER);
-        Bukkit.addRecipe(creeperHead);
-        
-        //Dragon Head
-        final ShapelessRecipe dragonHead = new ShapelessRecipe(new NamespacedKey(this, "custom_dragon_head"), new ItemStack(Material.DRAGON_HEAD, 1));
-        dragonHead.addIngredient(1, Material.WITHER_SKELETON_SKULL);
-        dragonHead.addIngredient(1, Material.END_CRYSTAL);
-        Bukkit.addRecipe(dragonHead);
     }
 
 
