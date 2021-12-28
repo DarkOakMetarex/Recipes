@@ -519,6 +519,12 @@ public final class Main extends JavaPlugin {
         rootedDirt.addIngredient(1, Material.DIRT);
         rootedDirt.addIngredient(1, Material.HANGING_ROOTS);
         Bukkit.addRecipe(rootedDirt);
+        
+        //Grass Block
+        final ShapelessRecipe grassBlock = new ShapelessRecipe(new NamespacedKey(this, "custom_grass_block"), new ItemStack(Material.GRASS_BLOCK, 1));
+        grassBlock.addIngredient(1, Material.MOSS_CARPET);
+        grassBlock.addIngredient(1, Material.DIRT);
+        Bukkit.addRecipe(grassBlock);
 
         //Calcite
         final ShapedRecipe calcite = new ShapedRecipe(new NamespacedKey(this, "custom_calcite"), new ItemStack(Material.CALCITE, 2));
