@@ -534,8 +534,6 @@ public final class Main extends JavaPlugin {
         tuff.setIngredient('G', Material.GRAY_DYE);
         Bukkit.addRecipe(tuff);
     }
-    }
-
 
     public void nerfRecipes(){
         // Gold Ore -> Becomes Gold Ore = Nullify
