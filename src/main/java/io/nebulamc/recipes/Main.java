@@ -388,6 +388,11 @@ public final class Main extends JavaPlugin {
         honeyBottle.addIngredient(1, Material.HONEY_BLOCK);
         Bukkit.addRecipe(honeyBottle);
         
+        //Honeycomb
+        final ShapelessRecipe honeyComb = new ShapelessRecipe(new NamespacedKey(this, "custom_honeycomb"), new ItemStack(Material.HONEYCOMB, 4));
+        honeyComb.addIngredient(1, Material.HONEYCOMB_BLOCK);
+        Bukkit.addRecipe(honeyComb);
+        
         //Tube Coral Block
         final ShapedRecipe tubeCoralBlock = new ShapedRecipe(new NamespacedKey(this, "custom_tube_coral_block"), new ItemStack(Material.TUBE_CORAL_BLOCK, 1));
         tubeCoralBlock.shape(" TT", " TT", "   ");
